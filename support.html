@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TOGIPPE Support — FAQs, troubleshooting tips, and how to reach the developer." />
+  <meta name="theme-color" content="#0B0C10" />
+  <title>Support — TOGIPPE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Δ</span>
+        <span>
+          <div class="brand-name">TOGIPPE</div>
+          <div class="brand-sub">iOS · Unit &amp; Dimension Lab</div>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="support.html" class="active">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <a class="nav-cta" href="https://apps.apple.com/" target="_blank" rel="noopener">App Store</a>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding: 64px 0 24px;">
+    <div class="container hero-inner">
+      <span class="hero-eyebrow">Help &amp; FAQ</span>
+      <h1 style="font-size: clamp(32px, 5vw, 48px);">Support</h1>
+      <p class="lead">
+        Quick answers to the most common questions about TOGIPPE.
+        Can't find what you need? Reach out via the App Store listing.
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom: 80px;">
+
+    <!-- FAQ -->
+    <section style="padding: 24px 0;">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub">Organised by topic so you can scan to the part that matters.</p>
+
+      <div class="faq-item">
+        <span class="tag">Getting started</span>
+        <h3>What does TOGIPPE actually do?</h3>
+        <p>
+          It's two tools in one. The <strong>Converter</strong> performs bidirectional
+          conversions across unit families (length, mass, energy, pressure, etc.).
+          The <strong>Hunter</strong> parses any unit expression you type — e.g.
+          <code>kg·m·s⁻²</code> — and resolves it to an SI base dimension vector
+          (<code>M¹·L¹·T⁻²</code>, which is force).
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Expressions</span>
+        <h3>What syntax does the expression parser accept?</h3>
+        <p>
+          You can combine SI symbols (<code>kg</code>, <code>m</code>, <code>s</code>,
+          <code>A</code>, <code>K</code>, <code>mol</code>, <code>cd</code>) and recognised
+          derived units (<code>N</code>, <code>J</code>, <code>Pa</code>, <code>W</code>,
+          <code>V</code>, <code>Ω</code>, <code>F</code>, <code>H</code>, <code>T</code>,
+          <code>Hz</code>). Use <code>·</code> for multiplication, <code>/</code> for division,
+          and superscripts (<code>²</code>, <code>⁻¹</code>) or <code>^</code> for exponents.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Privacy</span>
+        <h3>Does the app send my data anywhere?</h3>
+        <p>
+          No. TOGIPPE runs entirely on-device. There is no account system,
+          no analytics SDK, and no network requests for content. Your recent hunts and
+          preferences live in the iOS app sandbox. See the
+          <a href="privacy.html">Privacy Policy</a> for the full breakdown.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Data</span>
+        <h3>How do I clear my recent hunts?</h3>
+        <p>
+          Open <em>Settings → Data → Clear Recent Hunts</em> and confirm. To remove
+          everything, including preferences, simply uninstall the app.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Data</span>
+        <h3>Can I stop the app from remembering anything?</h3>
+        <p>
+          Yes. Toggle off <em>Persist Recent Hunts</em> in Settings. The app will then
+          start with an empty history every launch.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Accuracy</span>
+        <h3>How accurate are the conversions?</h3>
+        <p>
+          Conversion factors follow SI and NIST values. Display precision is configurable
+          from 2 to 8 fractional digits. For safety-critical or regulated calculations,
+          always cross-check against authoritative sources.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Troubleshooting</span>
+        <h3>My expression shows "Unknown" — what happened?</h3>
+        <p>
+          The parser couldn't match every token to a known unit. Check spelling, ensure
+          exponents are attached to the preceding symbol (<code>s⁻²</code>, not <code>s -2</code>),
+          and that all symbols are recognised. You can browse the in-app Library for valid units.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Troubleshooting</span>
+        <h3>The app feels slow on first launch.</h3>
+        <p>
+          On a brand-new install the unit catalogue initialises lazily. Subsequent
+          launches are near-instant because the catalogue is cached in memory and
+          preferences are preloaded from <code>UserDefaults</code>.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Devices</span>
+        <h3>Which devices and iOS versions are supported?</h3>
+        <p>
+          TOGIPPE targets modern iPhone and iPad running recent versions of
+          iOS / iPadOS. The app is built for arm64 devices and is portrait-oriented.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <span class="tag">Contact</span>
+        <h3>How do I report a bug or request a unit?</h3>
+        <p>
+          Email pyliyfg031@outlook.com. Please include
+          the unit you'd like added (or the expression that failed), the iOS version, and
+          your device model.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section style="padding: 24px 0;">
+      <div class="cta-strip">
+        <div>
+          <h3>Still stuck?</h3>
+          <p>Reach out through the App Store listing — we respond within a reasonable timeframe.</p>
+        </div>
+        <a class="btn btn-primary" href="https://apps.apple.com/" target="_blank" rel="noopener">Open App Store</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-inner">
+      <div>© 2025 TOGIPPE. All rights reserved.</div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

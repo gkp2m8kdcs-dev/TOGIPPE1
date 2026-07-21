@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TOGIPPE Privacy Policy — how the app handles your data, what is stored locally, and what is never collected." />
+  <meta name="theme-color" content="#0B0C10" />
+  <title>Privacy Policy — TOGIPPE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Δ</span>
+        <span>
+          <div class="brand-name">TOGIPPE</div>
+          <div class="brand-sub">iOS · Unit &amp; Dimension Lab</div>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <a class="nav-cta" href="https://apps.apple.com/" target="_blank" rel="noopener">App Store</a>
+    </div>
+  </nav>
+
+  <main class="container legal-layout">
+
+    <!-- TOC -->
+    <aside class="toc">
+      <h4>Contents</h4>
+      <ul>
+        <li><a href="#overview">1. Overview</a></li>
+        <li><a href="#collect">2. Data We Collect</a></li>
+        <li><a href="#permissions">3. Permissions</a></li>
+        <li><a href="#rights">4. Your Rights &amp; Controls</a></li>
+        <li><a href="#disclaimer">5. Accuracy Disclaimer</a></li>
+        <li><a href="#children">6. Children's Privacy</a></li>
+        <li><a href="#changes">7. Changes to this Notice</a></li>
+        <li><a href="#contact">8. Contact</a></li>
+      </ul>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="legal">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Last updated · January 9, 2025  ·  Effective immediately</div>
+
+      <p>
+        TOGIPPE (“the app”, “we”, “our”) is designed to operate entirely on your device.
+        This notice explains what data is processed, where it lives, and how you can control it.
+        It applies to the iOS edition of TOGIPPE distributed via the Apple App Store.
+      </p>
+
+      <h2 id="overview">1. Overview</h2>
+      <p>
+        We do not maintain accounts, do not require sign-in, and do not transmit your conversion
+        inputs, hunt history, or preferences to any external server. Your data stays on your
+        iPhone or iPad unless you explicitly share it.
+      </p>
+      <p>
+        Unlike a basic calculator or unit converter, TOGIPPE performs symbolic
+        dimensional analysis: it parses any user-typed unit expression (for example,
+        <code>kg·m·s⁻²</code>) and returns the SI base dimension vector
+        (<code>M¹·L¹·T⁻²</code> for force). All parsing and math is computed locally on-device.
+      </p>
+
+      <div class="callout">
+        Short version: <strong>no accounts, no analytics, no tracking, no network content requests.</strong>
+      </div>
+
+      <h2 id="collect">2. Data We Collect</h2>
+
+      <h3>2.1 Personal identifiers</h3>
+      <p>We do not ask for your name, email, phone number, or location.</p>
+
+      <h3>2.2 Analytics &amp; tracking</h3>
+      <p>
+        The app does not embed third-party analytics SDKs and does not record behavioural events.
+        No advertising identifiers are read or written.
+      </p>
+
+      <h3>2.3 Network requests</h3>
+      <p>
+        Conversions and unit math are computed locally; no user input is sent over the network.
+        The only outbound traffic is standard Apple App Store receipt validation and
+        crash-log submission performed by the iOS platform itself, outside our control.
+      </p>
+
+      <h3>2.4 Local storage (on your device)</h3>
+      <p>The following data is stored in the standard iOS app sandbox using <code>UserDefaults</code>:</p>
+      <ul>
+        <li><strong>Recent hunts</strong> — up to 32 recently typed unit expressions, so you can revisit them between launches. Stored under the key <code>hunter.history.v1</code>. User Content.</li>
+        <li><strong>Display precision</strong> — index for the precision selector. Preferences.</li>
+        <li><strong>SI notation toggle</strong> — whether results prefer SI base symbols. Preferences.</li>
+        <li><strong>Persist-history toggle</strong> — whether recent hunts are kept between launches. Preferences.</li>
+        <li><strong>Haptics toggle</strong> — whether haptic feedback is enabled. Preferences.</li>
+      </ul>
+      <p>
+        None of these items are linked to a user identity, are not used for tracking,
+        and never leave the device.
+      </p>
+
+      <h2 id="permissions">3. Permissions</h2>
+      <p>
+        The app requests <strong>no system permissions</strong>. It does not access the camera,
+        microphone, photo library, contacts, calendars, location services, motion sensors,
+        Bluetooth, local network, or any background mode.
+      </p>
+
+      <h2 id="rights">4. Your Rights &amp; Controls</h2>
+
+      <h3>4.1 Access &amp; export</h3>
+      <p>
+        All data is local; you can view your recent hunts inside the app at any time.
+      </p>
+
+      <h3>4.2 Deletion</h3>
+      <p>
+        Use <em>Settings → Data → Clear Recent Hunts</em> to erase the local hunt history.
+        Uninstalling the app removes all associated data from the device sandbox.
+      </p>
+
+      <h3>4.3 Opt-out of persistence</h3>
+      <p>
+        Disable <em>Persist Recent Hunts</em> in Settings to ensure nothing is stored between launches.
+      </p>
+
+      <h3>4.4 Data portability</h3>
+      <p>
+        Because all data lives in <code>UserDefaults</code> inside the app sandbox, exporting
+        requires either an in-app share-sheet (not currently shipped) or a device backup through
+        standard iOS tools.
+      </p>
+
+      <h2 id="disclaimer">5. Accuracy Disclaimer</h2>
+      <p>
+        TOGIPPE is provided as a productivity and reference tool. While we strive to keep
+        physical constants, unit definitions and conversion factors accurate and up to date with
+        recognised standards (SI, NIST), the app is intended for engineering, scientific and
+        educational assistance — <strong>not</strong> for safety-critical, medical, legal,
+        financial or life-dependent calculations.
+      </p>
+      <p>
+        Always verify critical results against authoritative sources. The developers assume no
+        liability for damages arising from the use of, or the inability to use, the converted values.
+      </p>
+
+      <h2 id="children">6. Children's Privacy</h2>
+      <p>
+        The app is not directed at children under 13 and knowingly collects no information
+        from them. If you believe a child has provided us data, please contact us so we can assist.
+      </p>
+
+      <h2 id="changes">7. Changes to this Notice</h2>
+      <p>
+        We may update this notice to reflect changes in the app or applicable law.
+        Updates will be published on this page and, where required, surfaced through
+        App Store update notes. Continued use of the app after an update constitutes
+        acceptance of the revised terms.
+      </p>
+
+      <h2 id="contact">8. Contact</h2>
+      <p>
+        If you have questions about this notice or wish to report a privacy concern,
+        please email pyliyfg031@outlook.com.
+        We respond within a reasonable timeframe.
+      </p>
+
+      <hr />
+      <p class="meta">© 2025 TOGIPPE. This notice is provided in English.</p>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-inner">
+      <div>© 2025 TOGIPPE. All rights reserved.</div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

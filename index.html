@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TOGIPPE — a precision unit converter and dimensional analysis tool for engineers, scientists and students. Parse any unit expression and resolve it to SI base dimensions on-device." />
+  <meta name="theme-color" content="#0B0C10" />
+  <title>TOGIPPE — Parse. Convert. Inspect.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Δ</span>
+        <span>
+          <div class="brand-name">TOGIPPE</div>
+          <div class="brand-sub">iOS · Unit &amp; Dimension Lab</div>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Overview</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <a class="nav-cta" href="https://apps.apple.com/" target="_blank" rel="noopener">App Store</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <span class="hero-eyebrow">A precision tool, not a toy</span>
+      <h1>Parse any unit.<br/>Resolve to <span class="accent">SI base dimensions</span>.</h1>
+      <p class="lead">
+        TOGIPPE is a symbolic dimensional-analysis workbench for iPhone and iPad.
+        Type <code>kg·m·s⁻²</code>, swap to <code>N</code>, inspect the M·L¹·T⁻² vector —
+        all computed locally on-device, with zero accounts and zero tracking.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/" target="_blank" rel="noopener">Download for iOS</a>
+        <a class="btn btn-ghost" href="#features">See features</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- DEMO -->
+  <section>
+    <div class="container">
+      <div class="demo">
+        <div class="demo-formula" aria-label="Example dimensional analysis">
+          <div class="row"><span class="k">expression</span><span class="v">kg·m·s⁻²</span></div>
+          <div class="row"><span class="k">recognised as</span><span class="v">N (newton)</span></div>
+          <div class="row"><span class="k">SI vector</span><span class="v accent">M¹ · L¹ · T⁻²</span></div>
+          <div class="row"><span class="k">category</span><span class="v">force</span></div>
+          <div class="row"><span class="k">computed</span><span class="v accent">on-device</span></div>
+        </div>
+        <div>
+          <h2 class="section-title">An instrument, not a calculator.</h2>
+          <p class="section-sub">
+            Every unit you type is tokenised, weighted by SI exponents, and reduced to a base
+            dimension vector. Convert across unit families, validate derived quantities,
+            and trust the math.
+          </p>
+          <ul class="bullets">
+            <li>Symbolic expression parser (kg·m·s⁻², km/h², J·K⁻¹·mol⁻¹, …)</li>
+            <li>SI base dimension vector for every quantity</li>
+            <li>Local-only — no servers, no accounts, no analytics</li>
+            <li>Engineered for engineers, scientists and students</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title">Built for the people who fight units all day.</h2>
+      <p class="section-sub">
+        A focused toolset — a fast converter, a dimensional hunter, a unit library,
+        and a quiet, premium-feeling interface.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="glyph">⇄</div>
+          <h3>Converter</h3>
+          <p>Bidirectional conversion across length, mass, time, energy, pressure, electricity and more — with adjustable precision.</p>
+        </div>
+        <div class="card">
+          <div class="glyph">Δ</div>
+          <h3>Hunter</h3>
+          <p>Type any unit expression and resolve it to its SI base dimension vector. Catch mismatched units before they reach a derivation.</p>
+        </div>
+        <div class="card">
+          <div class="glyph">☷</div>
+          <h3>Library</h3>
+          <p>Browse the curated unit catalogue organised by physical quantity — a quick reference for the most-used conversions.</p>
+        </div>
+        <div class="card">
+          <div class="glyph">⚙︎</div>
+          <h3>Preferences</h3>
+          <p>Pick display precision, toggle SI notation, opt out of history persistence, and manage haptic feedback.</p>
+        </div>
+        <div class="card">
+          <div class="glyph">§</div>
+          <h3>Privacy by design</h3>
+          <p>Everything runs on-device. No tracking, no third-party SDKs, no network requests for content. Read the <a href="privacy.html">privacy notice</a>.</p>
+        </div>
+        <div class="card">
+          <div class="glyph">○</div>
+          <h3>Quiet UI</h3>
+          <p>A lab-instrument aesthetic — restrained teal accent on a calm near-black canvas, designed for long sessions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-strip">
+        <div>
+          <h3>Stop fighting units. Start tracing them.</h3>
+          <p>TOGIPPE is available on the App Store for iPhone and iPad.</p>
+        </div>
+        <a class="btn btn-primary" href="https://apps.apple.com/" target="_blank" rel="noopener">Open App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-inner">
+      <div>© 2025 TOGIPPE. All rights reserved.</div>
+      <div class="foot-links">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
